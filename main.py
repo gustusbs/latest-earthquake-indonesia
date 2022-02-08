@@ -2,9 +2,9 @@
 Detection the latest earthquake in Indonesia
 """
 
-import data
+import dataoflatestearthquakeindonesia
 
 if __name__ == '__main__':
     print('Latest Earthquake in Indonesia')
-    result = data.extract_data()
-    data.show_data(result)
+    result = dataoflatestearthquakeindonesia.extract_data()
+    dataoflatestearthquakeindonesia.show_data(result)

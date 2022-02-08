@@ -68,10 +68,14 @@ def show_data(result):
         print("Latest Earthquake Not Found")
         return
     print('Latest Earthquake based on BMKG')
-    print(f"date {result['date']} ")
-    print(f"time {result['time']} ")
-    print(f"magnitude {result['magnitude']} ")
-    print(f"depth {result['depth']} ")
+    print(f"date: {result['date']} ")
+    print(f"time: {result['time']} ")
+    print(f"magnitude: {result['magnitude']} ")
+    print(f"depth: {result['depth']} ")
     print(f"location {result['location']} ")
     print(f"coordinate: LS={result['coordinate']['ls']}, BT={result['coordinate']['bt']} ")
-    print(f"felt {result['felt']}")
+    print(f"closest near: {result['felt']}")
+
+if __name__ == '__main__':
+    result = extract_data()
+    show_data(result)
